@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #2563eb; /* Azul padrão */
+  --hover-color: #1d4ed8; /* Azul mais escuro para o hover */
+  --bg-color: #f8fafc; /* Fundo da tela */
+  --card-bg: #ffffff; /* Fundo do botão/card */
+  --text-main: #0f172a; /* Cor do texto principal */
+  --text-muted: #64748b; /* Cor do texto secundário */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Container que organiza os botões em formato de grade (Grid) */
+.grid-container {
+  display: grid;
+  /* Cria colunas automáticas que se adaptam ao tamanho da tela */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Estilo do Cartão/Botão */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Efeito de animação quando passa o mouse por cima */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.card:hover .card-btn {
+  background-color: var(--hover-color);
+}
+
+/* Responsividade para telas de celular */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 coluna só no celular */
+  }
+}
