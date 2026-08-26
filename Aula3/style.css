@@ -1,0 +1,19 @@
+footer {
+    background-color: bisque;
+}
+
+article {
+    border: 3px solid red;
+}
+
+#video {
+    background-color: blue;
+}
+
+#foto {
+    background-color: green;
+}
+
+#musica {
+    background-color: yellow;
+}
