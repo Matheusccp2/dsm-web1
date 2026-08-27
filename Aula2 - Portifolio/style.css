@@ -1,5 +1,29 @@
 * {
-    margin: 0;
-    /* padding: 0; */
-    box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar li {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+    }
+}
+
