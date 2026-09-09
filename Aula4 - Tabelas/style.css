@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+h1 {
+  font-family: "Bungee", sans-serif;
+}
+
+table,
+th,
+td,
+caption {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.titulo {
+  background-color: cornflowerblue;
+}
+
+.sabores {
+    background-color: grey;
+}
+
+.fim-de-semana {
+    background-color: burlywood;
+}
