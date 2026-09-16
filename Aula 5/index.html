@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pr-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Aula 5 - Cadastro</title>
+  </head>
+  <body>
+    <h1>Cadastro de Clientes</h1>
+    <form id="formCadastroCliente">
+      <fieldset>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" />
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" />
+      </fieldset>
+      <fieldset>
+        <label for="num1">1º Número</label>
+        <input type="number" name="Numero1" id="num1" />
+
+        <label for="num2">2º Número</label>
+        <input type="number" name="Numero2" id="num2" />
+
+        <label id="resultado">Resultado: </label>
+      </fieldset>
+      <input type="button" value="Cadastrar" onclick="mostrarCampos()" />
+      <input type="button" value="Limpar" onclick="Limpar()" />
+      <button onclick="Somar()">Somar</button>
+      <button onclick="Subtrair()">Subtrair</button>
+      <button onclick="Multiplicar()">Multiplicar</button>
+      <button onclick="Dividir()">Dividir</button>
+
+    </form>
+
+    <script src="sript.js"></script>
+  </body>
+</html>
