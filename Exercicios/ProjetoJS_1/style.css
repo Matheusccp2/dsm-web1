@@ -1,0 +1,85 @@
+:root {
+  --fonte-titulo: "Space Grotesk", system-ui, sans-serif;
+  --fonte-texto: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+* {
+  font-family: var(--fonte-texto);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fonte-titulo);
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+
+  flex: 1 1 calc(50% - 20px);
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+section p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+main > br,
+main > hr {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  section {
+    flex-basis: 100%;
+  }
+}

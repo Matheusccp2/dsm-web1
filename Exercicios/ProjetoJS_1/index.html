@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ProjetoJS_1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lista Exercícios JS Básico</h1>
+    </header>
+
+    <main>
+      <section id="exercicio01">
+        <h2>Exercício 01</h2>
+        <p>
+          <b>Questão:</b> Faça um site que por meio de uma caixa de entrada
+          receba o salário de um funcionário e o percentual de aumento, calcule
+          o novo salário e o mostre por meio de um elemento parágrafo.
+        </p>
+
+        <form action="" id="aumentoSalario">
+          <label for="salario">Digite o seu Salário: </label>
+          <input type="number" name="salario" id="salario" />
+          <br />
+          <label for="aumento">Digite o percentual de aumento: </label>
+          <input type="number" name="aumento" id="aumento" />
+          <br />
+          <button type="submit" onclick="calcularAumentoSalario()">
+            Calcular
+          </button>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <section id="exercicio02">
+        <h2>Exercício 02</h2>
+        <p>
+          <b>Questão:</b> Faça o cálculo da área de um triângulo. Sabe-se que:
+          a. <b>Área = (Base * Altura) / 2 .</b>
+          As entradas serão caixas de texto e o resultado deve ser mostrado por
+          meio de uma caixa de texto com o atributo de somente leitura
+        </p>
+        <form action="" id="areaTriangulo">
+          <label for="base">Base: </label>
+          <input type="number" id="base" />
+          <br />
+          <label for="altura">Altura:</label>
+          <input type="number" id="altura" />
+          <br />
+          <label for="resposta">Resposta: </label>
+          <input type="text" id="resposta" readonly />
+          <br />
+          <button type="submit" onclick="calcularAreaTriangulo()">
+            Calcular Área
+          </button>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <section id="exercicio03">
+        <h2>Exercício 03</h2>
+        <p>
+          <b>Questão:</b> Receba duas notas e calcule a média ponderada (notas
+          com peso diferente). A primeira nota vale 30% e a segunda 70%. Mostre
+          por meio de um elemento label.
+        </p>
+
+        <form action="" id="mediaPonderada">
+          <label for="nota1">Primeira Nota:</label>
+          <input type="number" id="nota1" />
+          <br />
+          <label for="nota2">Segunda Nota:</label>
+          <input type="number" id="nota2" />
+          <br />
+          <button type="submit" onclick="calcularMediaPonderada()">
+            Calcular Média Ponderada
+          </button>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <section id="exercicio04">
+        <h2>Exercício 04</h2>
+        <p>
+          <b>Questão:</b> Receba a ano de nascimento. Calcule e mostre quantos:
+          anos, meses, dias, horas, minutos e semanas ele tem aproximadamente.
+          Calcule também quantos anos ele terá em 2050. Os resultados devem ser
+          mostrados no Console.
+        </p>
+
+        <form action="" id="tempoDeVida">
+          <label for="anoDeNascimento">Ano de Nascimento:</label>
+          <input type="number" id="anoNascimento" />
+          <br />
+          <button type="submit" onclick="calcularTempoDeVida()">
+            Calcular Tempo de Vida
+          </button>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <section id="exercicio05">
+        <h2>Exercício 05</h2>
+        <p>
+          <b>Questão:</b> Calcule o consumo médio de gasolina de um tanque de
+          automóvel. Peça para o usuário entrar com a distância (km) e o volume
+          (litros). O consumo médio é calculado por meio da fórmula Cm = d (km)
+          / v (litros). Mostre da forma que quiser
+        </p>
+
+        <form action="" id="calculoConsumoCombustivel">
+          <label for="distancia">Distância (KM):</label>
+          <input type="number" id="distancia" />
+          <br />
+          <label for="volume">Volume (Litros):</label>
+          <input type="number" id="volume" />
+          <br />
+          <button type="submit" onclick="calcularConsumoCombustivel()">
+            Calcular Consumo Médio
+          </button>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <section id="exercicio06">
+        <h2>Exercício 06</h2>
+        <p>
+          <b>Questão:</b> A empresa RAB paga os empregados por hora trabalhada.
+          Para as primeiras 40 horas, eles recebem normalmente. Após ultrapassar
+          este limite (40 horas) o valor pago por hora passa a ser três vezes
+          maior. Na folha de pagamento é descontado R$ 1,50 para cada refeição.
+          Calcule e mostre o salário bruto, o valor do desconto da refeição e o
+          salário líquido de um funcionário que trabalhou 62 horas.
+        </p>
+
+        <form action="" id="formPagamento">
+          <label for="valorHora">Valor da hora:</label>
+          <input type="number" id="valorHora" />
+          <br />
+          <label for="horasTrabalhadas">Horas trabalhadas:</label>
+          <input type="number" id="horasTrabalhadas" />
+          <br />
+          <label for="refeicoes">Quantidade de refeições:</label>
+          <input type="number" id="refeicoes" />
+          <br />
+          <button type="submit" onclick="calculoTrabalhista()">Calcular</button>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <section id="exercicio07">
+        <h2>Exercício 07</h2>
+        <p>
+          <b>Questão:</b> Faça aparecer um número randômico e mostre a mensagem
+          se é par ou ímpar.
+        </p>
+
+        <h3>Número aleatório</h3>
+        <p id="resultadoNumero"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
