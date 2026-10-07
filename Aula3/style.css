@@ -1,19 +1,48 @@
 footer {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 article {
-    border: 3px solid red;
+  border: 3px solid red;
 }
 
 #video {
-    background-color: blue;
+  background-color: blue;
 }
 
 #foto {
-    background-color: green;
+  background-color: green;
 }
 
 #musica {
-    background-color: yellow;
+  background-color: yellow;
+}
+
+header nav ul {
+  list-style-type: none;
+  li {
+    display: inline;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  :hover {
+    background-color: red;
+  }
+}
+
+article {
+    margin: 0 20%;
+}
+
+article video, iframe{
+    width: 30%;
+    height: 30%;
 }
