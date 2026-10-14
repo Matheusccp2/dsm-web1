@@ -84,6 +84,7 @@
         </div>
         <div class="col-2">
           <button class="btn btn-primary" id="orcar">Orçar</button>
+          <button class="btn btn-primary" id="imprimir">Imprimir</button>
         </div>
       </div>
       <div class="row">
@@ -93,7 +94,7 @@
             <input
               class="form-check-input"
               type="radio"
-              name="radioDefault"
+              name="pacote"
               id="banho"
               value="300"
             />
@@ -103,7 +104,7 @@
             <input
               class="form-check-input"
               type="radio"
-              name="radioDefault"
+              name="pacote"
               id="banhoCompleto"
               value="600"
               checked
@@ -119,10 +120,12 @@
             <input
               class="form-check-input"
               type="checkbox"
-              value="50"
+              value="15"
               id="servBanho"
+              name="servicos"
+              checked
             />
-            <label class="form-check-label" for="checkDefault">
+            <label class="form-check-label" for="servicos">
               Banho
             </label>
           </div>
@@ -130,11 +133,12 @@
             <input
               class="form-check-input"
               type="checkbox"
-              value="20"
+              value="5"
               id="servDente"
+              name="servicos"
               checked
             />
-            <label class="form-check-label" for="checkChecked">
+            <label class="form-check-label" for="servicos">
               Escovar Dente
             </label>
           </div>
@@ -142,11 +146,12 @@
             <input
               class="form-check-input"
               type="checkbox"
-              value="10"
+              value="20"
               id="servUnha"
+              name="servicos"
               checked
             />
-            <label class="form-check-label" for="checkChecked">
+            <label class="form-check-label" for="servicos">
               Cortar Unha
             </label>
           </div>
@@ -154,11 +159,12 @@
             <input
               class="form-check-input"
               type="checkbox"
-              value="20"
+              value="10"
               id="servTosa"
+              name="servicos"
               checked
             />
-            <label class="form-check-label" for="checkChecked">
+            <label class="form-check-label" for="servicos">
               Tosa Higiênica
             </label>
           </div>
