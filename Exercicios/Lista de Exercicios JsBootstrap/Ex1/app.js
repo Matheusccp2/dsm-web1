@@ -1,8 +1,6 @@
-function Limpar() {
+document.getElementById("btn-limpar").addEventListener("click", () => {
   document.querySelector("form").reset();
-}
-
-document.getElementById("btn-limpar").addEventListener("click", Limpar());
+});
 
 document.getElementById("btn-calcular").addEventListener("click", (event) => {
   event.preventDefault()
