@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 2rem;
+    min-width: 50%;
+}
+
+form {
+    width: 100%;
+}
+
+.infoDatas {
+  display: flex;
+  gap: 12px;
+}
+
+.infoDatas > div:first-child {
+  flex: 1;
+}
+
+.infoDatas > div:last-child {
+  flex: 1;
+}
+
+#hospedes {
+  width: 25%;
+}
+
+.opcionais {
+  display: flex;
+  gap: 15px;
+}

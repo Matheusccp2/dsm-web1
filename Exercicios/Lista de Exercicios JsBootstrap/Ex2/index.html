@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercicio 1 - Cadastro de Academia</title>
+  </head>
+  <body>
+    <main>
+      <h1>Hotel Bela Vista</h1>
+      <p>Reserva de Hospedagem</p>
+      <form>
+        <div class="mb-3 mx-5">
+          <label for="nomeHospede" class="form-label">Nome do hóspede</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nomeHospede"
+            aria-describedby="Nome Hospede"
+            maxlength="50"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+        <div class="form-group infoDatas">
+          <div class="mb-3 mx-5">
+            <label for="dataEntrada" class="form-label">Data de entrada</label>
+            <input type="date" class="form-control" id="dataEntrada" required />
+          </div>
+          <div class="mb-3 mx-5">
+            <label for="dataSaida" class="form-label">Data de saída</label>
+            <input type="date" class="form-control" id="dataSaida" required />
+          </div>
+        </div>
+        <div class="mb-3 mx-5">
+          <label for="plano" class="form-label">Tipo de quarto</label>
+          <select class="form-control" id="plano" required>
+            <option value="200">Standard</option>
+            <option value="350">Luxo</option>
+            <option value="500">Suíte</option>
+          </select>
+        </div>
+        <div class="mb-3 mx-5">
+          <label for="hospedes" class="form-label"
+            >Quantidade de hóspedes</label
+          >
+          <input
+            type="number"
+            min="1"
+            max="4"
+            class="form-control"
+            id="hospedes"
+            required
+          />
+        </div>
+        <!-- <div class="form-group mb-3 mx-5">
+          <label class="form-label">Período de treino</label>
+          <div class="form-field">
+            <input
+              type="radio"
+              id="periodo-manha"
+              class="radio"
+              name="fieldGroupRadio"
+              required
+            />
+            <label for="periodo-manha">Manhã</label>
+          </div>
+          <div class="form-field">
+            <input
+              type="radio"
+              id="periodo-tarde"
+              class="radio"
+              name="fieldGroupRadio"
+              required
+            />
+            <label for="periodo-tarde">Tarde</label>
+          </div>
+          <div class="form-field">
+            <input
+              type="radio"
+              id="periodo-noite"
+              class="radio"
+              name="fieldGroupRadio"
+              required
+            />
+            <label for="periodo-noite">Noite</label>
+          </div>
+        </div> -->
+        <div class="form-group mb-3 mx-5">
+          <label class="form-label">Serviços Opcionais</label>
+          <div class="opcionais">
+            <div class="form-field">
+              <input
+                type="checkbox"
+                id="personal-trainer"
+                class="check"
+                value="30"
+              />
+              <label for="personal-trainer">Café da Manhã</label>
+            </div>
+            <div class="form-field">
+              <input
+                type="checkbox"
+                id="avaliacao-fisica"
+                class="check"
+                value="20"
+              />
+              <label for="avaliacao-fisica">Estacionamento</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-3 mx-5">
+          <label for="observacoes">Observações</label>
+          <textarea
+            name="observacoes"
+            id="observacoes"
+            placeholder="Digite suas observações"
+            maxlength="200"
+          ></textarea>
+        </div>
+
+        <button
+          type="button"
+          class="btn-solid theme-primary mb-3 mx-5"
+          id="btn-calcular"
+        >
+          Calcular Reserva
+        </button>
+        <button
+          type="button"
+          class="btn-solid theme-primary mb-3 mx-5"
+          id="btn-limpar"
+        >
+          Limpar
+        </button>
+
+        <div class="mb-3 mx-5">
+          <label for="">Tabela de diárias</label>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Standard</td>
+                <td>R$ 200,00</td>
+              </tr>
+              <tr>
+                <td>Luxo</td>
+                <td>R$ 350,00</td>
+              </tr>
+              <tr>
+                <td>Suite</td>
+                <td>R$ 500,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </main>
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
