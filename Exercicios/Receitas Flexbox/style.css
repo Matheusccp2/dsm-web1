@@ -1,0 +1,118 @@
+/* ---------- Reset básico ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f1f7ee;
+  color: #1f3a2b;
+
+  /* body em COLUNA: topo, lista e rodapé empilhados */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Topo (COLUMN) ---------- */
+.topo {
+  display: flex;
+  flex-direction: column;       /* título em cima, frase embaixo */
+  align-items: center;
+  gap: 8px;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #2d6a4f;
+  color: #f1f7ee;
+}
+
+.topo p {
+  font-style: italic;
+  color: #b7e4c7;
+}
+
+/* ---------- Lista de cards (ROW) ---------- */
+.lista {
+  display: flex;
+  flex-direction: row;          /* cards lado a lado */
+  flex-wrap: wrap;              /* quebra de linha quando faltar espaço */
+  justify-content: center;
+  gap: 24px;
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* ---------- Card (COLUMN) ---------- */
+.card {
+  display: flex;
+  flex-direction: column;       /* foto em cima, informações embaixo */
+  width: 300px;
+  background-color: #ffffff;
+  border: 2px solid #95d5b2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ---------- Informações (COLUMN) ---------- */
+.info {
+  display: flex;
+  flex-direction: column;       /* itens empilhados */
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px;
+}
+
+.info h2 {
+  color: #2d6a4f;
+}
+
+.selo {
+  background-color: #d8f3dc;
+  color: #1b4332;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.info h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info ul {
+  padding-left: 20px;
+}
+
+/* ---------- Rodapé (ROW) ---------- */
+.rodape {
+  display: flex;
+  flex-direction: row;          /* alinhamento centralizado na linha */
+  justify-content: center;
+  padding: 20px;
+  background-color: #1b4332;
+  color: #b7e4c7;
+  font-size: 14px;
+}
+
+/* ---------- Celular: cards ocupam a largura toda ---------- */
+@media (max-width: 700px) {
+  .lista {
+    flex-direction: column;     /* cards empilhados */
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
